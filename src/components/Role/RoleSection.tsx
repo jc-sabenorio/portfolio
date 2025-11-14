@@ -20,7 +20,7 @@ export default function RoleSection() {
       >
         <div className="mt-20">
           <h1 className="text-3xl">What I Do?</h1>
-          <p className="mt-3 ml-3">Check out what I do below.</p>
+          <p className="mt-3 ml-3">Check out what I do as a developer!</p>
         </div>
         <CarouselContent>
           {roleData.map((data, idx) => {
