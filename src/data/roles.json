@@ -65,11 +65,6 @@
     "icon": "checkcircle"
   },
   {
-    "task": "Server",
-    "phrase": "Handling server operations and request flow.",
-    "icon": "server"
-  },
-  {
     "task": "Security",
     "phrase": "Protecting data with modern security standards.",
     "icon": "security"

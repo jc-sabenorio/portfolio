@@ -7,7 +7,7 @@ export default function Role() {
         </p>
       </div>
       <div className="flex justify-center md:justify-end">
-        <p className="text-center md:text-right">/* Philippines */</p>
+        <p className="text-center md:text-right">/* Philippines ✌️ */</p>
       </div>
     </div>
   );

@@ -12,20 +12,20 @@ import RoleIcon from "./RoleIcon";
 export default function RoleSection() {
   return (
     <>
-      <div className="text-center mt-20">
-        <h1 className="text-7xl">What I Do</h1>
-        <p className="mt-3">Check out what I do below.</p>
-      </div>
       <Carousel
         opts={{
           align: "start",
         }}
-        className="w-full max-w-250 justify-center p-8 md:p-0 mt-5"
+        className="w-full justify-center p-8 md:p-0 mt-5"
       >
+        <div className="mt-20">
+          <h1 className="text-3xl">What I Do?</h1>
+          <p className="mt-3 ml-3">Check out what I do below.</p>
+        </div>
         <CarouselContent>
           {roleData.map((data, idx) => {
             return (
-              <CarouselItem key={idx} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={idx} className="md:basis-1/3 lg:basis-1/4">
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex flex-col justify-center aspect-square items-center text-center p-6">

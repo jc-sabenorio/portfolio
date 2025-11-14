@@ -10,7 +10,7 @@ export default function Navbar() {
     setShowDropdown((prev) => !prev);
   }
   return (
-    <div className="p-3 px-5 sticky top-0 w-full">
+    <div className="p-3 px-5 sticky bg-gray-500 z-50 text-white top-0 w-full">
       <div className="nav-flex justify-between">
         {/* Logo */}
         <Navlogo />
