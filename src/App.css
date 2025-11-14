@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.section {
+  @apply text-white;
+}

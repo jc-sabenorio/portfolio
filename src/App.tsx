@@ -1,24 +1,17 @@
 import "./App.css";
 import "./styles/navbar.css";
 import Navbar from "./components/Navbar/Navbar";
+import IntroSection from "./components/Introduction/IntroSection";
 function App() {
   return (
-    <div>
-      <Navbar />
-      <main className="">
+    <>
+      <main>
+        <Navbar />
         {/* Intro Div */}
 
-        {/* Intro */}
-        <div className="">
-          {/* Introduction */}
-          <div>
-            
-          </div>
-          {/* Contacts */}
-          <div></div>
-        </div>
+        <IntroSection />
       </main>
-    </div>
+    </>
   );
 }
 
