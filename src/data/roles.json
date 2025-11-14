@@ -2,101 +2,96 @@
   {
     "task": "Version Control",
     "phrase": "Managing code efficiently with Git.",
-    "icon": "ForkRight"
+    "icon": "forkright"
   },
   {
     "task": "API Integration",
     "phrase": "Connecting applications through seamless API workflows.",
-    "icon": "IntegrationInstructions"
+    "icon": "integrationinstructions"
   },
   {
     "task": "Frontend",
     "phrase": "Building responsive and modern user interfaces.",
-    "icon": "DesktopWindows"
+    "icon": "desktopwindows"
   },
   {
     "task": "Backend",
     "phrase": "Developing secure and scalable server logic.",
-    "icon": "Dns"
+    "icon": "dns"
   },
   {
     "task": "Database",
     "phrase": "Organizing and optimizing structured data storage.",
-    "icon": "Storage"
+    "icon": "storage"
   },
   {
     "task": "Auth",
     "phrase": "Ensuring secure user access and data protection.",
-    "icon": "Lock"
+    "icon": "lock"
   },
   {
     "task": "API Design",
     "phrase": "Designing structured and reliable data endpoints.",
-    "icon": "Api"
+    "icon": "api"
   },
   {
     "task": "Deployment",
     "phrase": "Deploying applications to scalable cloud platforms.",
-    "icon": "CloudUpload"
+    "icon": "cloudupload"
   },
   {
     "task": "UI/UX",
     "phrase": "Turning designs into clean, user-friendly experiences.",
-    "icon": "Brush"
+    "icon": "brush"
   },
   {
     "task": "State",
     "phrase": "Maintaining predictable app behavior with clean state control.",
-    "icon": "SettingsEthernet"
+    "icon": "settingsethernet"
   },
   {
     "task": "Debugging",
     "phrase": "Identifying and resolving issues efficiently.",
-    "icon": "BugReport"
+    "icon": "bugreport"
   },
   {
     "task": "Performance",
     "phrase": "Improving speed and overall app performance.",
-    "icon": "Speed"
+    "icon": "speed"
   },
   {
     "task": "Testing",
     "phrase": "Ensuring reliability through quality tests.",
-    "icon": "CheckCircle"
+    "icon": "checkcircle"
   },
   {
     "task": "Server",
     "phrase": "Handling server operations and request flow.",
-    "icon": "Server"
+    "icon": "server"
   },
   {
     "task": "Security",
     "phrase": "Protecting data with modern security standards.",
-    "icon": "Security"
+    "icon": "security"
   },
   {
     "task": "Error Handling",
     "phrase": "Tracking and managing application errors.",
-    "icon": "ErrorOutline"
+    "icon": "erroroutline"
   },
   {
     "task": "Docs",
     "phrase": "Writing clear, helpful technical documentation.",
-    "icon": "Description"
+    "icon": "description"
   },
   {
     "task": "CI/CD",
     "phrase": "Automating builds and deployments.",
-    "icon": "BuildCircle"
-  },
-  {
-    "task": "Cross-Platform",
-    "phrase": "Delivering consistent experiences across devices.",
-    "icon": "Devices"
+    "icon": "buildcircle"
   },
   {
     "task": "Collaboration",
     "phrase": "Working with teams to build better code.",
-    "icon": "Groups"
+    "icon": "groups"
   }
 ]
