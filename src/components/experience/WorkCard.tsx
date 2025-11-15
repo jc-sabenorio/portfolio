@@ -1,4 +1,6 @@
-export default function WorkCard({ workData }) {
+import type { WorkExperience } from "@/interfaces/experienceInterface";
+
+export default function WorkCard({ workData }: { workData: WorkExperience }) {
   return (
     <div className="cursor-pointer group border rounded-md">
       <div className="p-5 rounded-md">

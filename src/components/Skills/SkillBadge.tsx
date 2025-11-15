@@ -1,4 +1,5 @@
-export default function SkillBadge({ skill }) {
+import type { Skill } from "@/interfaces/skillsInterface";
+export default function SkillBadge({ skill }: { skill: Skill }) {
   return (
     <div
       className="group p-3 flex justify-center items-center border rounded-lg cursor-pointer select-none

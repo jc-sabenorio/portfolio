@@ -1,4 +1,10 @@
-export default function EducationCard({ educationData }) {
+import type { Education } from "@/interfaces/experienceInterface";
+
+export default function EducationCard({
+  educationData,
+}: {
+  educationData: Education;
+}) {
   return (
     <div className="cursor-pointer group border rounded-md">
       <div className="p-5 rounded-md">

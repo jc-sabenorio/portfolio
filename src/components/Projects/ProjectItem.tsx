@@ -1,6 +1,7 @@
 import TechnologyItem from "./TechnologyItem";
+import type { Project } from "@/interfaces/projectInterface";
 
-export default function ProjectItem({ projectData }) {
+export default function ProjectItem({ projectData }: { projectData: Project }) {
   return (
     <div className="flex flex-col md:flex-row items-center gap-1 border rounded-md p-3">
       <img

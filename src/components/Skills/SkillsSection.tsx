@@ -1,7 +1,6 @@
 import languages from "@/data/languages.json";
 import frameworks from "@/data/frameworks.json";
 import databases from "@/data/databases.json";
-import deployment from "@/data/deployment.json";
 import tools from "@/data/tools.json";
 import SkillsContainer from "./SkillsContainer";
 export default function SkillsSection() {

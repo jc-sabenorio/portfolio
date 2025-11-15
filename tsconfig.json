@@ -9,7 +9,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/components*": ["./components/*"],
-      "@/data*": ["./data/*"]
+      "@/data*": ["./data/*"],
+      "@/interfaces*": ["./interfaces/*"]
     }
   }
 }

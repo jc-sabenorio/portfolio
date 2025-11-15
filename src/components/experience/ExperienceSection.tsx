@@ -1,7 +1,6 @@
 import works from "@/data/works.json";
 import educations from "@/data/education.json";
 import EducationCard from "./EducationCard";
-import { WorkflowIcon } from "lucide-react";
 import WorkCard from "./WorkCard";
 export default function ExperienceSection() {
   return (
