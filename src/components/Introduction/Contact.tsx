@@ -17,7 +17,7 @@ export default function Contact() {
         <span>
           <PhoneAndroidIcon />
         </span>{" "}
-        +63-976-306-1925
+        +63-976-263-2748
       </a>
 
       <div className="flex justify-center md:justify-start gap-1">
