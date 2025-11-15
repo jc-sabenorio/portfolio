@@ -11,7 +11,7 @@ export default function Navdropdown({
       <div className="p-1">Projects</div>
       <div className="p-1">Skills</div>
       <div className="p-1">Certificates</div>
-      <div className="p-1">My Journey</div>
+      <div className="p-1">Experience</div>
     </div>
   );
 }

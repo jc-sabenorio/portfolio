@@ -1,6 +1,5 @@
 import languages from "@/data/languages.json";
 import frameworks from "@/data/frameworks.json";
-import libraries from "@/data/libraries.json";
 import databases from "@/data/databases.json";
 import deployment from "@/data/deployment.json";
 import tools from "@/data/tools.json";
@@ -16,14 +15,16 @@ export default function SkillsSection() {
       {/* Languages */}
 
       <SkillsContainer header={"Languages"} skillsData={languages} />
-      {/* Frameworks */}
-      <SkillsContainer header={"Frameworks"} skillsData={frameworks} />
-      {/* Libaries */}
-      <SkillsContainer header={"Libraries"} skillsData={libraries} />
-      {/* Databases */}
-      <SkillsContainer header={"Databases"} skillsData={databases} />
-      {/* Deployment */}
-      <SkillsContainer header={"Deployment"} skillsData={deployment} />
+      {/* Libraries & Frameworks */}
+      <SkillsContainer
+        header={"Libraries & Frameworks"}
+        skillsData={frameworks}
+      />
+      {/* Databases & Deployment */}
+      <SkillsContainer
+        header={"Databases & Deployment"}
+        skillsData={databases}
+      />
       {/* Tools */}
       <SkillsContainer header={"Tools"} skillsData={tools} />
     </section>

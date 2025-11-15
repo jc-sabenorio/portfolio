@@ -43,5 +43,35 @@
     "title": "Next.js",
     "image": "images/icons/nextjs-icon.png",
     "alt": "Next.js Icon"
+  },
+  {
+    "title": "Chart.js",
+    "image": "images/icons/chartjs-icon.png",
+    "alt": "Chart.js Icon"
+  },
+  {
+    "title": "Redux",
+    "image": "images/icons/redux-icon.png",
+    "alt": "Redux Icon"
+  },
+  {
+    "title": "Socket.io",
+    "image": "images/icons/socket-icon.png",
+    "alt": "Socket.io Icon"
+  },
+  {
+    "title": "Matplotlib",
+    "image": "images/icons/matplotlib-icon.png",
+    "alt": "Matplot Icon"
+  },
+  {
+    "title": "NumPy",
+    "image": "images/icons/numpy-icon.png",
+    "alt": "Numpy Icon"
+  },
+  {
+    "title": "Pandas",
+    "image": "images/icons/pandas-icon.png",
+    "alt": "Pandas Icon"
   }
 ]

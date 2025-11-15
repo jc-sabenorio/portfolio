@@ -6,6 +6,8 @@ import IntroSection from "./components/Introduction/IntroSection";
 import RoleSection from "./components/Role/RoleSection";
 import ProjectsSection from "./components/Projects/ProjectsSection";
 import SkillsSection from "./components/Skills/SkillsSection";
+import ExperienceSection from "./components/experience/ExperienceSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,7 +23,11 @@ function App() {
         <ProjectsSection />
 
         <SkillsSection />
+
+        <ExperienceSection />
       </main>
+
+      <Footer />
     </>
   );
 }

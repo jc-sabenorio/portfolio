@@ -23,5 +23,30 @@
     "title": "Supabase",
     "image": "images/icons/supabase-icon.png",
     "alt": "Supabase Icon"
+  },
+  {
+    "title": "SQLite",
+    "image": "images/icons/sqlite-icon.png",
+    "alt": "SQLite Icon"
+  },
+  {
+    "title": "Render",
+    "image": "images/icons/render-icon.jpg",
+    "alt": "Render Icon"
+  },
+  {
+    "title": "Vercel",
+    "image": "images/icons/vercel-icon.png",
+    "alt": "Vercel Icon"
+  },
+  {
+    "title": "Netlify",
+    "image": "images/icons/netlify-icon.png",
+    "alt": "Netlify Icon"
+  },
+  {
+    "title": "Docker",
+    "image": "images/icons/docker-icon.png",
+    "alt": "Docker Icon"
   }
 ]

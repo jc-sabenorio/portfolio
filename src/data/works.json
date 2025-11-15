@@ -1,0 +1,14 @@
+[
+  {
+    "name": "LEENTech Network Solutions Inc.",
+    "date": "July 2024 - August 2024",
+    "role": "Backend Developer Intern",
+    "contributions": [
+      "Contributed as a backend developer in a team of five for the rapid development of Airis, an AI-powered smartbot system featuring multiple personas with specialized functionalities.",
+      "Developed and maintained backend services using the Next.js framework, integrated with Vercel database services.",
+      "Implemented OpenAI GPT-4o and DALL·E API integration to enable intelligent dialogue generation and AI-powered image creation.",
+      "Assisted in prompt engineering to optimize chatbot responses and align outputs with intended personas.",
+      "Collaborated with the team to ensure system scalability, performance, and seamless deployment."
+    ]
+  }
+]

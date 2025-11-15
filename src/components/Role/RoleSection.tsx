@@ -27,7 +27,7 @@ export default function RoleSection() {
             return (
               <CarouselItem key={idx} className="md:basis-1/3 lg:basis-1/4">
                 <div className="p-1">
-                  <Card>
+                  <Card className="">
                     <CardContent className="flex flex-col justify-center aspect-square items-center text-center p-6">
                       <RoleIcon icon={data.icon} />
                       <span className="text-3xl font-semibold">

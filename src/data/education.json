@@ -1,0 +1,21 @@
+[
+  {
+    "school": "Lyceum of the Philippines University - Cavite",
+    "years": "2021 - 2025",
+    "awards": ["Dean's Lister A.Y 2021 - 2024"],
+    "course": "BS Computer Science",
+    "extracurriculars": [
+      "Participated in 11th IT Skills Olympics (Java)",
+      "Participated in 11th iSite Inc. Programming Competition 2024 (Python)",
+      "Participated in 13th IT Skills Olympics (Quiz Bee)"
+    ],
+    "training": [
+      "Operating Systems Basics by Cisco Networking Academy",
+      "Networking Basics by Cisco Networking Academy",
+      "Philippine Coding Camp 2-Day Data Science Workshop",
+      "SAP Business One - Fit Academy",
+      "IT Specialist Certification in Databases - Certiport",
+      "IT Specialist Certification in Python - Certiport"
+    ]
+  }
+]
