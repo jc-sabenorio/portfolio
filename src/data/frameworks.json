@@ -35,6 +35,11 @@
     "alt": "Flask Icon"
   },
   {
+    "title": "Django",
+    "image": "images/icons/django-icon.png",
+    "alt": "Django Icon"
+  },
+  {
     "title": "ASP.NET",
     "image": "images/icons/aspnet-icon.png",
     "alt": "ASP.net Icon"
