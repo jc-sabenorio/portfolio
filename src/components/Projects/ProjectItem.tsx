@@ -20,7 +20,7 @@ export default function ProjectItem({ projectData }: { projectData: Project }) {
         </div>
         {/* Buttons */}
         <div className="flex gap-1 mt-3">
-          <a href={projectData.repoLink}>
+          <a href={projectData.repoLink} target="_blank">
             <button className="bg-gray-800 text-white rounded-md p-1 px-2 cursor-pointer">
               View GitHub
             </button>
