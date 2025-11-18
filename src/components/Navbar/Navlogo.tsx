@@ -9,7 +9,7 @@ export default function Navlogo() {
   return (
     <div className="nav-flex">
       <img
-        className="w-10 aspect-square bg-black rounded-full p-1"
+        className="w-10 aspect-square bg-gray-800 rounded-full p-1"
         src="/images/jc-logo.png"
       />
 

@@ -1,6 +1,7 @@
 import projects from "@/data/projects.json";
 import ProjectItem from "./ProjectItem";
 import SectionSeparator from "../SectionSeparator";
+import "@/styles/ProjectSection.css";
 export default function ProjectsSection() {
   return (
     <section id="projects-section" className="flex flex-col mt-20 w-full">

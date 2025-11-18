@@ -7,7 +7,7 @@ export default function DownloadButton() {
       download={resumeFile}
       target="_blank"
     >
-      <button className="bg-black text-white cursor-pointer p-2 px-3 rounded-full font-semibold">
+      <button className="bg-gray-800 text-white cursor-pointer p-2 px-3 rounded-full font-semibold">
         <div className="flex items-center justify-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"

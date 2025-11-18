@@ -12,6 +12,7 @@ import RoleIcon from "./RoleIcon";
 import SectionSeparator from "../SectionSeparator";
 import { useContext } from "react";
 import { ThemeContext } from "@/contexts/ThemeContext";
+import "@/styles/RoleSection.css";
 export default function RoleSection() {
   const { isDarkMode } = useContext(ThemeContext);
   return (
@@ -32,11 +33,7 @@ export default function RoleSection() {
             return (
               <CarouselItem key={idx} className="md:basis-1/3 lg:basis-1/4">
                 <div className="p-1">
-                  <Card
-                    className={`${
-                      isDarkMode && "bg-gray-500 text-white fill-white"
-                    }`}
-                  >
+                  <Card className={`${isDarkMode && "role-dark"}`}>
                     <CardContent className="flex flex-col justify-center aspect-square items-center text-center p-6">
                       <RoleIcon icon={data.icon} />
                       <span className="text-3xl font-semibold">
@@ -53,14 +50,10 @@ export default function RoleSection() {
 
         <div className="flex justify-center mt-5 gap-3">
           <CarouselPrevious
-            className={`relative cursor-pointer ${
-              isDarkMode && "bg-gray-500 text-white fill-white"
-            }`}
+            className={`relative cursor-pointer ${isDarkMode && "role-dark"}`}
           />
           <CarouselNext
-            className={`relative cursor-pointer ${
-              isDarkMode && "bg-gray-500 text-white fill-white"
-            }`}
+            className={`relative cursor-pointer ${isDarkMode && "role-dark"}`}
           />
         </div>
       </Carousel>

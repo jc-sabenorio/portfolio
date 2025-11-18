@@ -1,12 +1,19 @@
 import type { Education } from "@/interfaces/experienceInterface";
+import { ThemeContext } from "@/contexts/ThemeContext";
+import { useContext } from "react";
 
 export default function EducationCard({
   educationData,
 }: {
   educationData: Education;
 }) {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
-    <div className="cursor-pointer group border rounded-md bg-white">
+    <div
+      className={`cursor-pointer group border rounded-md ${
+        isDarkMode ? "bg-gray-500 text-gray-100" : "bg-white"
+      }`}
+    >
       <div className="p-5 rounded-md">
         <div className="flex items-center justify-between">
           <p>{educationData.years}</p>
@@ -19,10 +26,8 @@ export default function EducationCard({
 
         {/* Contributions */}
         <div className="overflow-hidden">
-          <hr className="mt-3 h-0.5 bg-black" />
-          <p className="text-xl mt-3 mb-3">
-            Extracurricular Activities
-          </p>
+          <hr className="mt-3 h-0.5" />
+          <p className="text-xl mt-3 mb-3">Extracurricular Activities</p>
 
           <ul className="list-disc list-inside">
             {educationData.extracurriculars.map((data, idx) => (
@@ -30,9 +35,7 @@ export default function EducationCard({
             ))}
           </ul>
 
-          <p className="text-xl mt-3 mb-3">
-            Certifications and Training
-          </p>
+          <p className="text-xl mt-3 mb-3">Certifications and Training</p>
 
           <ul className="list-disc list-inside">
             {educationData.training.map((data, idx) => (

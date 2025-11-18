@@ -1,9 +1,15 @@
+import { ThemeContext } from "@/contexts/ThemeContext";
 import TechnologyItem from "./TechnologyItem";
 import type { Project } from "@/interfaces/projectInterface";
-
+import { useContext } from "react";
 export default function ProjectItem({ projectData }: { projectData: Project }) {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
-    <div className="flex flex-col md:flex-row items-center gap-1 border rounded-md p-3 bg-white">
+    <div
+      className={`flex flex-col md:flex-row items-center gap-1 border rounded-md p-3 ${
+        isDarkMode ? "project-dark" : "bg-white"
+      }`}
+    >
       <img
         className="w-15 mx-3 aspect-square rounded-full"
         src={projectData.iconLink}

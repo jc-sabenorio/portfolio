@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.role-dark {
+  @apply bg-gray-600 text-gray-100 fill-gray-100;
+}

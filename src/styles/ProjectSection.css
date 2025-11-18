@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.project-dark {
+  @apply bg-gray-600 fill-gray-100 text-gray-100;
+}
