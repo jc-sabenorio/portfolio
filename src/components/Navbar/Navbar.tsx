@@ -29,7 +29,13 @@ export default function Navbar() {
     <div
       className={`p-3 px-5 sticky ${
         isAtTop
-          ? "bg-transparent"
+          ? `${
+              showDropdown
+                ? `${
+                    isDarkMode ? "bg-gray-600/60" : "bg-gray-400/60"
+                  } transition-colors duration-300`
+                : "bg-transparent"
+            }`
           : `${
               isDarkMode ? "bg-gray-600/60" : "bg-gray-400/60"
             } transition-colors duration-300`
