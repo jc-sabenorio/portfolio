@@ -3,14 +3,11 @@ import frameworks from "@/data/frameworks.json";
 import databases from "@/data/databases.json";
 import tools from "@/data/tools.json";
 import SkillsContainer from "./SkillsContainer";
+import SectionSeparator from "../SectionSeparator";
 export default function SkillsSection() {
   return (
     <section id="skills-section" className="flex flex-col mt-20 w-full mb-5">
-      <div className="flex items-center gap-2">
-        <h1 className="text-3xl">Skills</h1>
-        <div className="flex-1 h-[1px] bg-black"></div>
-      </div>
-      <p className="mt-3">Skills I've developed!</p>
+      <SectionSeparator header="Skills" desc="Skills I've developed!" />
 
       {/* Languages */}
 

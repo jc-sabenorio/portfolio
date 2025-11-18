@@ -2,20 +2,27 @@ import works from "@/data/works.json";
 import educations from "@/data/education.json";
 import EducationCard from "./EducationCard";
 import WorkCard from "./WorkCard";
+import SectionSeparator from "../SectionSeparator";
+import { useContext } from "react";
+import { ThemeContext } from "@/contexts/ThemeContext";
 export default function ExperienceSection() {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
     <section id="experience-section" className="flex flex-col mt-20 w-full">
       <div className="">
-        <div className="flex items-center gap-2">
-          <h1 className="text-3xl">Experience</h1>
-          <div className="flex-1 h-[1px] bg-black"></div>
-        </div>
-        <p className="mt-3">My Journey!</p>
+        <SectionSeparator header="Experience" desc="My Journey!" />
+
         {/* Container */}
         <div className="grid  grid-cols-1 md:grid-cols-2 gap-3">
           {/* Education */}
           <div className="p-3 rounded-md">
-            <h1 className="text-3xl text-center mb-3">Education</h1>
+            <h1
+              className={`${
+                isDarkMode ? "text-white" : "text-black"
+              } text-3xl text-center mb-3`}
+            >
+              Education
+            </h1>
 
             {educations.map((data, idx) => {
               return <EducationCard educationData={data} key={idx} />;
@@ -23,7 +30,13 @@ export default function ExperienceSection() {
           </div>
           {/* Work */}
           <div className="p-3 rounded-md">
-            <h1 className="text-3xl text-center mb-3">Work</h1>
+            <h1
+              className={`${
+                isDarkMode ? "text-white" : "text-black"
+              } text-3xl text-center mb-3`}
+            >
+              Work
+            </h1>
 
             {works.map((data, idx) => {
               return <WorkCard workData={data} key={idx} />;
