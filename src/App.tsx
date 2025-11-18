@@ -10,11 +10,12 @@ import ExperienceSection from "./components/experience/ExperienceSection";
 import Footer from "./components/Footer/Footer";
 import { sectionContext } from "@/contexts/sectionContext.ts";
 import { ThemeContext } from "@/contexts/ThemeContext";
+import useLocalStorage from "@/hooks/useLocalStorage";
 // import ActionButton from "./components/ActionButton";
 
 function App() {
   const [activeSection, setActiveSection] = useState("intro-section");
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useLocalStorage("isDarkMode", false);
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 

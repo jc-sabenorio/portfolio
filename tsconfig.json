@@ -11,7 +11,8 @@
       "@/components*": ["./components/*"],
       "@/data*": ["./data/*"],
       "@/interfaces*": ["./interfaces/*"],
-      "@/contexts*": ["./contexts/*"]
+      "@/contexts*": ["./contexts/*"],
+      "@/hooks*": ["./hooks/*"]
     }
   }
 }
