@@ -1,5 +1,4 @@
 import { sectionContext } from "@/contexts/sectionContext";
-import menuicon from "/svg/menuicon.svg";
 import { useContext } from "react";
 import { ThemeContext } from "@/contexts/ThemeContext";
 export default function Navlinks({ handleClick }: { handleClick: () => void }) {
@@ -14,7 +13,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
       >
         <a
           className={`nav-link ${activeSection == "intro-section" && "active"}`}
-          href="#intro-section"
+          href="#"
         >
           Me
         </a>
