@@ -21,6 +21,7 @@ export default function EducationCard({
           <div>
             <p className="font-semibold">{educationData.school}</p>
             <p>{educationData.course}</p>
+            <p>Dean's Lister 2021 - 2024</p>
           </div>
         </div>
 
