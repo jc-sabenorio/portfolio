@@ -16,7 +16,16 @@ export default function ProjectItem({ projectData }: { projectData: Project }) {
         alt="project-icon"
       />
       <div className="flex flex-col items-center md:items-start text-center md:text-left">
-        <p className="font-bold">{projectData.name}</p>
+        <div className="flex w-full justify-between">
+          <p className="font-bold">{projectData.name}</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            className="cursor-pointer w-5 aspect-square hover:w-7 transition-all"
+          >
+            <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+          </svg>
+        </div>
         <p>{projectData.description}</p>
         <p>Technologies Used:</p>
         <div className="flex justify-center md:justify-start flex-wrap gap-2">
