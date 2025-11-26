@@ -6,7 +6,7 @@ export default function ProjectItem({ projectData }: { projectData: Project }) {
   const { isDarkMode } = useContext(ThemeContext);
   return (
     <div
-      className={`flex flex-col md:flex-row items-center gap-1 border rounded-md shadow-md p-3 ${
+      className={`flex flex-row items-center gap-1 border rounded-md shadow-md p-3 ${
         isDarkMode ? "project-dark" : "bg-white"
       }`}
     >
@@ -15,7 +15,7 @@ export default function ProjectItem({ projectData }: { projectData: Project }) {
         src={projectData.iconLink}
         alt="project-icon"
       />
-      <div className="flex flex-col items-center md:items-start text-center md:text-left">
+      <div className="flex flex-col text-left">
         <div className="flex w-full justify-between">
           <p className="font-bold">{projectData.name}</p>
           <svg
@@ -28,7 +28,7 @@ export default function ProjectItem({ projectData }: { projectData: Project }) {
         </div>
         <p>{projectData.description}</p>
         <p>Technologies Used:</p>
-        <div className="flex justify-center md:justify-start flex-wrap gap-2">
+        <div className="flex justify-start flex-wrap gap-2">
           {projectData.technologies.map((techData, idx) => {
             return <TechnologyItem key={idx} data={techData} />;
           })}

@@ -48,7 +48,7 @@ function App() {
                 <Navbar />
               </div>
               <IntroSection />
-              <div className="flex flex-col scroll-smooth basis-1/2 p-3">
+              <div className="flex flex-col scroll-smooth basis-1/2 p-3 mx-4">
                 {/* Intro Div */}
 
                 <RoleSection />
