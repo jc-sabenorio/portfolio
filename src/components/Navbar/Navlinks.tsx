@@ -18,7 +18,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
       <div
         className={`${
           isDarkMode ? "text-white" : "text-black"
-        } hidden md:block`}
+        } hidden md:flex items-center`}
       >
         <a
           className={`nav-link ${
@@ -26,7 +26,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
           }`}
           href="#"
         >
-          About
+          <p className="transition-all hover:scale-125">About</p>
         </a>
 
         <a
@@ -35,7 +35,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
           }`}
           href="#projects-section"
         >
-          Projects
+          <p className="transition-all hover:scale-125">Projects</p>
         </a>
         <a
           className={`nav-link ${
@@ -43,7 +43,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
           }`}
           href="#skills-section"
         >
-          Skills
+          <p className="transition-all hover:scale-125">Skills</p>
         </a>
         <a
           className={`nav-link ${
@@ -51,7 +51,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
           }`}
           href="#experience-section"
         >
-          Experience
+          <p className="transition-all hover:scale-125">Experience</p>
         </a>
       </div>
 

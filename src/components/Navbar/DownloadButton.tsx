@@ -1,5 +1,8 @@
+import { useContext } from "react";
 import resumeFile from "/files/Sabenorio_Resume.pdf";
+import { ThemeContext } from "@/contexts/ThemeContext";
 export default function DownloadButton() {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
     <a
       href={resumeFile}
@@ -7,7 +10,11 @@ export default function DownloadButton() {
       download={resumeFile}
       target="_blank"
     >
-      <button className="bg-gray-800 hover:bg-gray-500 transition-colors text-white cursor-pointer p-3 px-5 rounded-md font-semibold">
+      <button
+        className={`${
+          isDarkMode ? "bg-gray-500" : "bg-gray-800"
+        } transition-all text-white cursor-pointer p-3 px-5 rounded-md font-semibold hover:scale-125 duration-300`}
+      >
         <div className="flex items-center justify-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
