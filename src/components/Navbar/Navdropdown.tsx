@@ -16,8 +16,6 @@ export default function Navdropdown({
         isDarkMode ? "text-gray-100 fill-white" : "text-black fill-black"
       }`}
     >
-
-      
       <a href="#">
         <div className={`p-1 rounded-full`}>Me</div>
       </a>
@@ -30,6 +28,7 @@ export default function Navdropdown({
       <a href="#experience-section">
         <div className={`p-1 rounded-full`}>Experience</div>
       </a>
+
       <a href={resumeFile} download={resumeFile} target="_blank">
         <div className="flex items-center justify-center gap-1">
           <svg

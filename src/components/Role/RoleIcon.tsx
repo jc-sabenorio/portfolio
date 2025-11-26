@@ -39,27 +39,27 @@ type RoleIconKeys =
   | "groups";
 
 const roleIcons: Record<RoleIconKeys, JSX.Element> = {
-  forkright: <ForkRightIcon sx={{ fontSize: 50 }} />,
+  forkright: <ForkRightIcon sx={{ fontSize: 30 }} />,
   integrationinstructions: (
-    <IntegrationInstructionsIcon sx={{ fontSize: 50 }} />
+    <IntegrationInstructionsIcon sx={{ fontSize: 30 }} />
   ),
-  desktopwindows: <DesktopWindowsIcon sx={{ fontSize: 50 }} />,
-  dns: <DnsIcon sx={{ fontSize: 50 }} />,
-  storage: <StorageIcon sx={{ fontSize: 50 }} />,
-  lock: <LockIcon sx={{ fontSize: 50 }} />,
-  api: <ApiIcon sx={{ fontSize: 50 }} />,
-  cloudupload: <CloudUploadIcon sx={{ fontSize: 50 }} />,
-  brush: <BrushIcon sx={{ fontSize: 50 }} />,
-  settingsethernet: <SettingsEthernetIcon sx={{ fontSize: 50 }} />,
-  bugreport: <BugReportIcon sx={{ fontSize: 50 }} />,
-  speed: <SpeedIcon sx={{ fontSize: 50 }} />,
-  checkcircle: <CheckCircleIcon sx={{ fontSize: 50 }} />,
-  server: <DnsIcon sx={{ fontSize: 50 }} />,
-  security: <SecurityIcon sx={{ fontSize: 50 }} />,
-  erroroutline: <ErrorOutlineIcon sx={{ fontSize: 50 }} />,
-  description: <DescriptionIcon sx={{ fontSize: 50 }} />,
-  buildcircle: <BuildCircleIcon sx={{ fontSize: 50 }} />,
-  groups: <GroupsIcon sx={{ fontSize: 50 }} />,
+  desktopwindows: <DesktopWindowsIcon sx={{ fontSize: 30 }} />,
+  dns: <DnsIcon sx={{ fontSize: 30 }} />,
+  storage: <StorageIcon sx={{ fontSize: 30 }} />,
+  lock: <LockIcon sx={{ fontSize: 30 }} />,
+  api: <ApiIcon sx={{ fontSize: 30 }} />,
+  cloudupload: <CloudUploadIcon sx={{ fontSize: 30 }} />,
+  brush: <BrushIcon sx={{ fontSize: 30 }} />,
+  settingsethernet: <SettingsEthernetIcon sx={{ fontSize: 30 }} />,
+  bugreport: <BugReportIcon sx={{ fontSize: 30 }} />,
+  speed: <SpeedIcon sx={{ fontSize: 30 }} />,
+  checkcircle: <CheckCircleIcon sx={{ fontSize: 30 }} />,
+  server: <DnsIcon sx={{ fontSize: 30 }} />,
+  security: <SecurityIcon sx={{ fontSize: 30 }} />,
+  erroroutline: <ErrorOutlineIcon sx={{ fontSize: 30 }} />,
+  description: <DescriptionIcon sx={{ fontSize: 30 }} />,
+  buildcircle: <BuildCircleIcon sx={{ fontSize: 30 }} />,
+  groups: <GroupsIcon sx={{ fontSize: 30 }} />,
 };
 
 export default function RoleIcon({ icon }: { icon: string }) {

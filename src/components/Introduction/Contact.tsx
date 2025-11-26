@@ -1,6 +1,7 @@
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import SocialMediaIcons from "../SocialMediaIcons/SocialMediaIcons";
+import DownloadButton from "../Navbar/DownloadButton";
 
 export default function Contact() {
   function callNumber() {
@@ -25,8 +26,11 @@ export default function Contact() {
         </span>{" "}
         +63-976-263-2748
       </a>
+      <div className="flex justify-center">
+        <SocialMediaIcons />
+      </div>
 
-      <SocialMediaIcons />
+      <DownloadButton />
     </div>
   );
 }

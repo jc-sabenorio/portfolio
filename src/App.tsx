@@ -1,6 +1,6 @@
 import "./App.css";
 import "./styles/navbar.css";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 import IntroSection from "./components/Introduction/IntroSection";
 import { useState, useEffect } from "react";
 import RoleSection from "./components/Role/RoleSection";
@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import { sectionContext } from "@/contexts/sectionContext.ts";
 import { ThemeContext } from "@/contexts/ThemeContext";
 import useLocalStorage from "@/hooks/useLocalStorage";
+import Navbar from "./components/Navbar/Navbar";
 // import ActionButton from "./components/ActionButton";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            console.log("active:", entry.target.id);
             setActiveSection(entry.target.id);
           }
         });
@@ -39,23 +41,26 @@ function App() {
           <main
             className={`${
               isDarkMode ? "bg-gray-800" : "bg-amber-50"
-            } transition-colors duration-300`}
+            } transition-colors duration-300 min-h-screen relative`}
           >
-            <Navbar />
-            <div className="flex flex-col justify-center items-center max-w-350 mx-auto">
-              {/* Intro Div */}
-
+            <div className="flex flex-col md:flex-row h-full justify-center gap-3">
+              <div className="w-full sticky top-0 md:hidden">
+                <Navbar />
+              </div>
               <IntroSection />
+              <div className="flex flex-col scroll-smooth basis-1/2 p-3">
+                {/* Intro Div */}
 
-              <RoleSection />
+                <RoleSection />
 
-              <ProjectsSection />
+                <ProjectsSection />
 
-              <SkillsSection />
+                <SkillsSection />
 
-              <ExperienceSection />
+                <ExperienceSection />
+                <Footer />
+              </div>
             </div>
-            <Footer />
           </main>
           {/* <ActionButton /> */}
         </sectionContext.Provider>

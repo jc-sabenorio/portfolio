@@ -13,7 +13,7 @@ export default function ExperienceSection() {
         <SectionSeparator header="Experience" desc="My Journey!" />
 
         {/* Container */}
-        <div className="grid  grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="flex flex-col gap-3">
           {/* Education */}
           <div className="p-3 rounded-md">
             <h1
