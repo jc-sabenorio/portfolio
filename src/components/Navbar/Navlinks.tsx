@@ -26,7 +26,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
           }`}
           href="#"
         >
-          Me
+          About
         </a>
 
         <a

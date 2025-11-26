@@ -21,7 +21,7 @@ export default function WorkCard({ workData }: { workData: WorkExperience }) {
         </div>
 
         {/* Contributions */}
-        <div className="overflow-hidden">
+        {/* <div className="overflow-hidden">
           <hr className="mt-3 h-0.5" />
           <p className="text-xl mt-3 mb-3">Contributions</p>
 
@@ -30,7 +30,7 @@ export default function WorkCard({ workData }: { workData: WorkExperience }) {
               <li key={idx}>{data}</li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );

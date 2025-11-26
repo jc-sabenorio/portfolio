@@ -17,7 +17,7 @@ export default function Navdropdown({
       }`}
     >
       <a href="#">
-        <div className={`p-1 rounded-full`}>Me</div>
+        <div className={`p-1 rounded-full`}>About</div>
       </a>
       <a href="#projects-section">
         <div className={`p-1 rounded-full`}>Projects</div>

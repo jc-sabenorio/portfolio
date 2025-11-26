@@ -24,7 +24,7 @@ export default function EducationCard({
           </div>
         </div>
 
-        {/* Contributions */}
+        {/* Contributions
         <div className="overflow-hidden">
           <hr className="mt-3 h-0.5" />
           <p className="text-xl mt-3 mb-3">Extracurricular Activities</p>
@@ -42,7 +42,7 @@ export default function EducationCard({
               <li key={idx}>{data}</li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );

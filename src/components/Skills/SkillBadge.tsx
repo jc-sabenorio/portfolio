@@ -7,7 +7,7 @@ export default function SkillBadge({ skill }: { skill: Skill }) {
     <div
       className={`group p-3 flex justify-center items-center border rounded-lg cursor-pointer select-none shadow-md
                 hover:translate-y-2  
-                transition-all duration-150 relative ${
+                transition-all duration-150 ${
                   isDarkMode ? "bg-gray-200" : "bg-white"
                 }`}
     >
