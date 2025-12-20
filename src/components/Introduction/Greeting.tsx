@@ -8,7 +8,7 @@ export default function Greeting() {
   return (
     <div id="profile" className="text-center lg:mt-15">
       <img
-        className="flex-1 mx-auto rounded-full max-w-72 aspect-square object-cover"
+        className="mx-auto rounded-full max-w-72 aspect-square object-cover"
         src="/images/formal.JPG"
       />
       <div id="name-intro">

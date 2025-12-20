@@ -13,7 +13,7 @@ export default function DownloadButton() {
       <button
         className={`${
           isDarkMode ? "bg-gray-500" : "bg-gray-800"
-        } transition-all text-white cursor-pointer p-3 px-5 rounded-md font-semibold hover:scale-125 duration-300`}
+        } transition-all text-white cursor-pointer p-3 px-13 rounded-md font-semibold hover:scale-125 duration-300`}
       >
         <div className="flex items-center justify-center gap-1">
           <svg
