@@ -6,9 +6,9 @@ export default function SectionSeparator({ header }: { header: string }) {
     <div className={`${isDarkMode ? "text-white" : "text-black"} mb-3`}>
       <div className="flex items-center gap-2">
         <h1 className="text-3xl font-bold">{header}</h1>
-        <div
+        {/* <div
           className={`flex-1 h-[1px] ${isDarkMode ? "bg-white" : "bg-black"}`}
-        ></div>
+        ></div> */}
       </div>
     </div>
   );

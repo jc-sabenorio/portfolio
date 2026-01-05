@@ -10,7 +10,7 @@ export default function ProjectsSection() {
     <section id="projects-section" className="flex flex-col mt-20 w-full">
       <SectionSeparator header="Featured Projects" />
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 mt-3">
         {projects.map((data, idx) => {
           return <ProjectItem key={idx} projectData={data} />;
         })}

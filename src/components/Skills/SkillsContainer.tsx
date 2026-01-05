@@ -12,7 +12,7 @@ export default function SkillsContainer({
   const { isDarkMode } = useContext(ThemeContext);
   return (
     <div
-      className={`font-semibold mt-5 ${isDarkMode ? "text-white" : "text-black"}`}
+      className={`font-semibold ${isDarkMode ? "text-white" : "text-black"}`}
     >
       <h1 className="text-xl">{header}</h1>
 
