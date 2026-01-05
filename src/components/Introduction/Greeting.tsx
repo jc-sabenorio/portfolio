@@ -18,7 +18,7 @@ export default function Greeting() {
         <div className="big-text font-bold mb-3 mt-3">
           <p id="myName">
             <span
-              className={`${isDarkMode ? "text-blue-500" : "text-blue-800"}`}
+              className={`${isDarkMode ? "text-blue-400" : "text-blue-800"}`}
             >
               John Carlo
             </span>{" "}
