@@ -20,8 +20,8 @@ export default function ProjectItem({ projectData }: { projectData: Project }) {
           {projectData.name}
         </p>
         <p className="text-center md:text-left">{projectData.description}</p>
-        <p className="text-center md:text-left mt-5 mb-1">Technologies Used:</p>
-        <div className="flex justify-center md:justify-start flex-wrap gap-2">
+        <p className="text-center md:text-left mt-5 mb-1 font-semibold">Technologies Used:</p>
+        <div className="flex justify-center md:justify-start flex-wrap gap-1">
           {projectData.technologies.map((techData, idx) => {
             return <TechnologyItem key={idx} data={techData} />;
           })}

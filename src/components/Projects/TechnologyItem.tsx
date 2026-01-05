@@ -3,7 +3,7 @@ import type { Technology } from "@/interfaces/projectInterface";
 export default function TechnologyItem({ data }: { data: Technology }) {
   return (
     <div
-      className={`group p-1 flex justify-center items-center border rounded-lg cursor-pointer select-none
+      className={`group p-1 flex justify-center items-center rounded-lg cursor-pointer select-none
                 hover:scale-125  
                 transition-all duration-150 bg-white`}
     >
