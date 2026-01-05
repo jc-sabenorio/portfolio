@@ -7,7 +7,7 @@ import "@/styles/ProjectSection.css";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects-section" className="flex flex-col mt-20 w-full">
+    <section id="projects-section" className="flex flex-col mt-10 w-full">
       <SectionSeparator header="Featured Projects" />
 
       <div className="flex flex-col gap-3 mt-3">
