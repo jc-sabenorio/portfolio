@@ -2,7 +2,7 @@ import { sectionContext } from "@/contexts/sectionContext";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "@/contexts/ThemeContext";
 export default function Navlinks({ handleClick }: { handleClick: () => void }) {
-  const { activeSection } = useContext(sectionContext);
+  const { activeSection, setActiveSection } = useContext(sectionContext);
   const { isDarkMode } = useContext(ThemeContext);
   const [isAtTop, setIsAtTop] = useState(window.pageYOffset == 0);
 
@@ -13,6 +13,12 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isAtTop) {
+      setActiveSection("intro-section");
+    }
+  }, [isAtTop]);
+
   return (
     <div className="nav-flex gap-0">
       <div
@@ -22,7 +28,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
       >
         <a
           className={`nav-link ${
-            activeSection == "intro-section" || isAtTop ? "active" : ""
+            activeSection == "intro-section" ? "active" : ""
           }`}
           href="#"
         >
@@ -31,7 +37,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
 
         <a
           className={`nav-link ${
-            activeSection == "projects-section" && !isAtTop ? "active" : ""
+            activeSection == "projects-section" ? "active" : ""
           }`}
           href="#projects-section"
         >

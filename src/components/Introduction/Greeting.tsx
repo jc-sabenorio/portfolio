@@ -13,6 +13,7 @@ export default function Greeting() {
       <img
         className="mx-auto rounded-full max-w-72 aspect-square object-cover"
         src="/images/formal.JPG"
+        alt="formal image"
       />
       <div id="name-intro">
         <div className="big-text font-bold mb-3 mt-3">

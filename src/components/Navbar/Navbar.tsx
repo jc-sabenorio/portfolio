@@ -1,13 +1,31 @@
 import Navlogo from "./Navlogo";
 import Navlinks from "./Navlinks";
 import Navdropdown from "./Navdropdown";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { sectionContext } from "@/contexts/sectionContext";
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
-
+  const { setActiveSection } = useContext(sectionContext);
   function handleDropdownClick() {
     setShowDropdown((prev) => !prev);
   }
+
+  useEffect(() => {
+    const hashName = window.location.hash;
+
+    function checkHashName() {
+      if (hashName == "#projects-section") {
+        setActiveSection("projects-section");
+      } else if (hashName == "#skills-section") {
+        setActiveSection("skills-section");
+      } else if (hashName == "#experience-section") {
+        setActiveSection("experience-section");
+      } else {
+        setActiveSection("intro-section");
+      }
+    }
+    checkHashName();
+  }, []);
 
   return (
     <div
