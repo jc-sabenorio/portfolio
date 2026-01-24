@@ -30,7 +30,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -40,7 +40,7 @@ function App() {
     gsap.fromTo(
       "#main-container",
       { opacity: 0 }, // starting position
-      { opacity: 1, duration: 3, ease: "back" }
+      { opacity: 1, duration: 3, ease: "back" },
     );
   }, []);
 
