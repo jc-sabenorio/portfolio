@@ -6,7 +6,7 @@ export default function Footer() {
   const { isDarkMode } = useContext(ThemeContext);
   return (
     <div
-      className={`p-3 border-t-2 mt-3 flex items-center justify-between ${
+      className={`p-3 border-t-2 mt-8 flex items-center justify-between ${
         isDarkMode ? "fill-white text-white" : "fill-black text-black"
       }`}
     >
