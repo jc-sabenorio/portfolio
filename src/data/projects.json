@@ -17,7 +17,7 @@
       { "name": "C#", "image": "images/icons/csharp-icon.png" },
       { "name": "Vuforia", "image": "images/icons/vuforia-icon.jpg" }
     ],
-    "iconLink": "images/logos/partnar-logo.png",
+    "iconLink": "images/project-images/partnar.png",
     "repoLink": "https://github.com/JohnCarloSabenorio/PartnAR-CMS",
     "websiteLink": ""
   },
@@ -36,7 +36,7 @@
       { "name": "Flask", "image": "images/icons/flask-icon.png" },
       { "name": "MySQL", "image": "images/icons/mysql-icon.png" }
     ],
-    "iconLink": "images/logos/voce-logo.jpg",
+    "iconLink": "images/project-images/voce.jpg",
     "repoLink": "https://github.com/JohnCarloSabenorio/voce",
     "websiteLink": ""
   },
@@ -54,7 +54,7 @@
       { "name": "React.js", "image": "images/icons/react-icon.png" },
       { "name": "PostgreSQL", "image": "images/icons/postgres-icon.png" }
     ],
-    "iconLink": "images/logos/airis-logo.png",
+    "iconLink": "images/project-images/airis.png",
     "repoLink": "https://github.com/JohnCarloSabenorio/Airis",
     "websiteLink": ""
   },
@@ -73,7 +73,7 @@
       { "name": "MongoDB", "image": "images/icons/mongodb-icon.png" },
       { "name": "Postman", "image": "images/icons/postman-icon.png" }
     ],
-    "iconLink": "images/logos/natours-logo.png",
+    "iconLink": "images/project-images/natours.png",
     "repoLink": "https://github.com/JohnCarloSabenorio/Natours",
     "websiteLink": ""
   },
@@ -95,7 +95,7 @@
       { "name": "TailwindCSS", "image": "images/icons/tailwind-icon.png" },
       { "name": "Redux", "image": "images/icons/redux-icon.png" }
     ],
-    "iconLink": "images/logos/jconnect-logo.png",
+    "iconLink": "images/project-images/jconnect.png",
     "repoLink": "https://github.com/JohnCarloSabenorio/JConnect",
     "websiteLink": "jconnect.onrender.com/"
   },
@@ -113,7 +113,7 @@
       { "name": "TailwindCSS", "image": "images/icons/tailwind-icon.png" },
       { "name": "Next.js", "image": "images/icons/nextjs-icon.png" }
     ],
-    "iconLink": "images/logos/gamevault-logo.png",
+    "iconLink": "images/project-images/gamevault.jpg",
     "repoLink": "https://github.com/JohnCarloSabenorio/game-vault",
     "websiteLink": "https://game-vault-topaz.vercel.app/"
   }
