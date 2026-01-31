@@ -1,12 +1,15 @@
 import { ThemeContext } from "@/contexts/ThemeContext";
 import type { WorkExperience } from "@/interfaces/experienceInterface";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 export default function WorkCard({ workData }: { workData: WorkExperience }) {
   const { isDarkMode } = useContext(ThemeContext);
+  const [displayContrib, setDisplayContrib] = useState(false);
+
   return (
     <div
-      className={`cursor-pointer group rounded-md shadow-sm ${
+      onClick={() => setDisplayContrib((prev) => !prev)}
+      className={`cursor-pointer group rounded-md shadow-sm hover:shadow-md transition-all ${
         isDarkMode
           ? "bg-gray-500 text-gray-100 shadow-white"
           : "shadow-black bg-white"
@@ -28,17 +31,24 @@ export default function WorkCard({ workData }: { workData: WorkExperience }) {
           </div>
         </div>
 
-        {/* Contributions */}
-        {/* <div className="overflow-hidden">
-          <hr className="mt-3 h-0.5" />
-          <p className="text-xl mt-3 mb-3">Contributions</p>
+        <div
+          className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+            displayContrib ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+          }`}
+        >
+          <div
+            className={`overflow-hidden ${workData.contributions.length == 0 && "hidden"}`}
+          >
+            <hr className="mt-3 h-0.5" />
+            <p className="text-xl mt-3 mb-3">Contributions</p>
 
-          <ul className="list-disc list-inside">
-            {workData.contributions.map((data, idx) => (
-              <li key={idx}>{data}</li>
-            ))}
-          </ul>
-        </div> */}
+            <ul className="list-disc list-inside">
+              {workData.contributions.map((data, idx) => (
+                <li key={idx}>{data}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

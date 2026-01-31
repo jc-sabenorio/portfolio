@@ -1,5 +1,11 @@
 [
   {
+    "name": "Wellevate",
+    "date": "January 2026 - Present",
+    "role": "Junior Software Engineer",
+    "contributions": []
+  },
+  {
     "name": "LEENTech Network Solutions Inc.",
     "date": "July 2024 - August 2024",
     "role": "Backend Developer Intern",
@@ -10,11 +16,5 @@
       "Assisted in prompt engineering to optimize chatbot responses and align outputs with intended personas.",
       "Collaborated with the team to ensure system scalability, performance, and seamless deployment."
     ]
-  },
-  {
-    "name": "Wellevate",
-    "date": "January 2026 - Present",
-    "role": "Junior Software Engineer",
-    "contributions": [""]
   }
 ]
