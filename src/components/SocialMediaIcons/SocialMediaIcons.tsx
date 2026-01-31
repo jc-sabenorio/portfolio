@@ -4,7 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 export default function SocialMediaIcons() {
   return (
     <div className="flex justify-center md:justify-start gap-1">
-      <a href="https://github.com/JohnCarloSabenorio" target="_blank">
+      <a href="https://github.com/jc-sabenorio" target="_blank">
         <GitHubIcon
           sx={{
             fontSize: 30,
