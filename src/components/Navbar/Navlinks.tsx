@@ -1,9 +1,10 @@
 import { sectionContext } from "@/contexts/sectionContext";
+import { ThemeContext } from "@/contexts/ThemeContext";
 import { useContext, useEffect, useState } from "react";
 export default function Navlinks({ handleClick }: { handleClick: () => void }) {
   const { activeSection, setActiveSection } = useContext(sectionContext);
   const [isAtTop, setIsAtTop] = useState(window.pageYOffset == 0);
-
+  const { isDarkMode } = useContext(ThemeContext);
   function handleScroll() {
     setIsAtTop(window.pageYOffset == 0);
   }
@@ -18,7 +19,9 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
   }, [isAtTop]);
 
   return (
-    <div className="nav-flex text-white gap-0">
+    <div
+      className={`nav-flex ${isDarkMode ? "text-white" : "text-gray-950"} gap-0`}
+    >
       <div className={`hidden md:flex items-center`}>
         <a
           className={`nav-link ${
@@ -59,7 +62,7 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 -960 960 960"
         className={`image-size w-15 cursor-pointer md:hidden 
-        fill-white
+        ${isDarkMode ? "fill-white" : "fill-black"}
         `}
         onClick={handleClick}
       >

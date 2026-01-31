@@ -40,7 +40,7 @@ export default function WorkCard({ workData }: { workData: WorkExperience }) {
             className={`overflow-hidden ${workData.contributions.length == 0 && "hidden"}`}
           >
             <hr className="mt-3 h-0.5" />
-            <p className="text-xl mt-3 mb-3">Contributions</p>
+            <p className="text-xl mt-3 mb-3 font-bold">Contributions</p>
 
             <ul className="list-disc list-inside">
               {workData.contributions.map((data, idx) => (

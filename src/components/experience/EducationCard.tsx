@@ -44,7 +44,9 @@ export default function EducationCard({
         >
           <div className="overflow-hidden">
             <hr className="mt-3 h-0.5" />
-            <p className="text-xl mt-3 mb-3">Extracurricular Activities</p>
+            <p className="text-xl mt-3 mb-3 font-bold">
+              Extracurricular Activities
+            </p>
 
             <ul className="list-disc list-inside">
               {educationData.extracurriculars.map((data, idx) => (
@@ -52,7 +54,9 @@ export default function EducationCard({
               ))}
             </ul>
 
-            <p className="text-xl mt-3 mb-3">Certifications and Training</p>
+            <p className="text-xl mt-3 mb-3 font-bold">
+              Certifications and Training
+            </p>
 
             <ul className="list-disc list-inside">
               {educationData.training.map((data, idx) => (

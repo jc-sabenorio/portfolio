@@ -203,38 +203,38 @@ export function BokehBackground({
   return (
     <div
       ref={containerRef}
-      className={cn("fixed inset-0 overflow-hidden transition-all", className)}
-      style={{
-        background: isDarkMode
-          ? "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0a0f1e 100%)" // Dark blue gradient
-          : "linear-gradient(135deg, #fff5eb 0%, #ffe4cc 50%, #fff0db 100%)", // Warm peachy-cream gradient
-      }}
+      className={cn("fixed inset-0 overflow-hidden", className)}
     >
-      <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" />
-
-      {/* Subtle overlay */}
+      {/* Dark mode background */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-20"
+        className={cn(
+          "absolute inset-0 transition-opacity duration-300",
+          isDarkMode ? "opacity-100" : "opacity-0",
+        )}
         style={{
-          background: isDarkMode
-            ? "radial-gradient(ellipse at 30% 30%, rgba(59, 130, 246, 0.2) 0%, transparent 50%)" // Blue glow for dark mode
-            : "radial-gradient(ellipse at 30% 30%, rgba(255, 180, 100, 0.25) 0%, transparent 50%)", // Warm orange glow for light mode
+          background:
+            "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0a0f1e 100%)",
         }}
       />
 
-      {/* Vignette */}
+      {/* Light mode background */}
       <div
-        className="pointer-events-none absolute inset-0"
+        className={cn(
+          "absolute inset-0 transition-opacity duration-300",
+          !isDarkMode ? "opacity-100" : "opacity-0",
+        )}
         style={{
-          background: isDarkMode
-            ? "radial-gradient(ellipse at center, transparent 0%, transparent 40%, rgba(15, 23, 42, 0.8) 100%)" // Dark blue vignette
-            : "radial-gradient(ellipse at center, transparent 0%, transparent 40%, rgba(255, 220, 150, 0.3) 100%)", // Light golden vignette
+          background:
+            "linear-gradient(135deg, #fff5eb 0%, #ffe4cc 50%, #fff0db 100%)",
         }}
       />
 
-      {/* Content layer */}
+      <canvas ref={canvasRef} className="absolute inset-0 h-full w-full z-10" />
+
+      {/* Overlay layers with same technique... */}
+
       {children && (
-        <div className="relative z-10 h-full w-full">{children}</div>
+        <div className="relative z-20 h-full w-full">{children}</div>
       )}
     </div>
   );

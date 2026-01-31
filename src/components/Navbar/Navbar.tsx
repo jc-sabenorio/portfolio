@@ -3,11 +3,24 @@ import Navlinks from "./Navlinks";
 import Navdropdown from "./Navdropdown";
 import { useContext, useEffect, useState } from "react";
 import { sectionContext } from "@/contexts/sectionContext";
-import { ThemeContext } from "@/contexts/ThemeContext";
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
   const { setActiveSection } = useContext(sectionContext);
-  const { isDarkMode } = useContext(ThemeContext);
+  const [isAtTop, setIsAtTop] = useState(window.pageYOffset == 0);
+
+  function handleScroll() {
+    setIsAtTop(window.pageYOffset == 0);
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (isAtTop) {
+      setActiveSection("intro-section");
+    }
+  }, [isAtTop]);
+
   function handleDropdownClick() {
     setShowDropdown((prev) => !prev);
   }
@@ -31,9 +44,9 @@ export default function Navbar() {
 
   return (
     <div
-      className={`p-3 px-5 sticky transition-colors duration-300 ${isDarkMode ? "bg-gray-500" : "bg-gray-800"} rounded-3xl z-50 top-0 w-full mt-3 max-w-200 mx-auto mb-3`}
+      className={`sticky transition-all duration-300 rounded-md p-3 ${!isAtTop && "backdrop-blur-lg"} ${!isAtTop && "lg:bg-transparent lg:backdrop-blur-none"} z-50 top-0 w-full pt-5 mb-3`}
     >
-      <div className="nav-flex justify-between">
+      <div className="nav-flex justify-between px-3">
         {/* Logo */}
         <Navlogo />
 

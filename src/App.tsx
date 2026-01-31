@@ -61,7 +61,7 @@ function App() {
               id="main-container"
               className="relative z-10 flex flex-col lg:flex-row w-full h-full justify-center gap-3"
             >
-              <div className="w-full sticky top-0 lg:hidden px-3">
+              <div className="w-full sticky top-0 lg:hidden">
                 <Navbar />
               </div>
               <IntroSection />

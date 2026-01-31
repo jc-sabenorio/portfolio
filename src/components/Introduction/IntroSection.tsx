@@ -12,7 +12,7 @@ export default function IntroSection() {
         isDarkMode && "dark"
       } basis-1/2 max-h-screen lg:sticky md:top-0`}
     >
-      <div className="hidden lg:block w-full px-3">
+      <div className="hidden lg:block w-full">
         <Navbar />
       </div>
       <Greeting />
