@@ -12,7 +12,9 @@ export default function Footer() {
     >
       <h1>© 2025 JC Sabenorio. All Rights Reserved.</h1>
 
-      <SocialMediaIcons />
+      <div className="lg:hidden">
+        <SocialMediaIcons />
+      </div>
     </div>
   );
 }

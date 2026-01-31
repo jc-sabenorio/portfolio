@@ -3,7 +3,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 export default function SocialMediaIcons() {
   return (
-    <div className="flex justify-center md:justify-start gap-1 lg:hidden">
+    <div className="flex justify-center md:justify-start gap-1">
       <a rel="noopener" href="https://github.com/jc-sabenorio" target="_blank">
         <GitHubIcon
           sx={{
