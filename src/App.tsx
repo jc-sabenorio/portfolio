@@ -14,10 +14,12 @@ import useLocalStorage from "@/hooks/useLocalStorage";
 import Navbar from "./components/Navbar/Navbar";
 // import ActionButton from "./components/ActionButton";
 import { gsap } from "gsap";
+import BokehBackgroundDemo from "./components/Background";
 
 function App() {
   const [activeSection, setActiveSection] = useState("intro-section");
   const [isDarkMode, setIsDarkMode] = useLocalStorage("isDarkMode", false);
+
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 
@@ -48,34 +50,31 @@ function App() {
     <>
       <ThemeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
         <sectionContext.Provider value={{ activeSection, setActiveSection }}>
-          <main
-            className={`${
-              isDarkMode ? "bg-gray-800" : "bg-amber-50"
-            } transition-colors duration-300 min-h-screen relative`}
-          >
+          <main className="transition-colors duration-300 w-full h-full relative">
+            {/* Background layer - z-0 */}
+            <div className="fixed inset-0 z-0">
+              <BokehBackgroundDemo />
+            </div>
+
+            {/* Content layer - z-10 */}
             <div
               id="main-container"
-              className="flex flex-col lg:flex-row h-full justify-center gap-3"
+              className="relative z-10 flex flex-col lg:flex-row w-full h-full justify-center gap-3"
             >
-              <div className="w-full sticky top-0 lg:hidden">
+              <div className="w-full sticky top-0 lg:hidden px-3">
                 <Navbar />
               </div>
               <IntroSection />
+
               <div className="flex flex-col scroll-smooth basis-1/2 p-3 mx-4">
-                {/* Intro Div */}
-
                 <RoleSection />
-
                 <ProjectsSection />
-
                 <SkillsSection />
-
                 <ExperienceSection />
                 <Footer />
               </div>
             </div>
           </main>
-          {/* <ActionButton /> */}
         </sectionContext.Provider>
       </ThemeContext.Provider>
     </>

@@ -3,9 +3,11 @@ import Navlinks from "./Navlinks";
 import Navdropdown from "./Navdropdown";
 import { useContext, useEffect, useState } from "react";
 import { sectionContext } from "@/contexts/sectionContext";
+import { ThemeContext } from "@/contexts/ThemeContext";
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
   const { setActiveSection } = useContext(sectionContext);
+  const { isDarkMode } = useContext(ThemeContext);
   function handleDropdownClick() {
     setShowDropdown((prev) => !prev);
   }
@@ -29,7 +31,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`p-3 px-5 sticky transition-colors duration-300 backdrop-blur-md z-50 top-0 w-full`}
+      className={`p-3 px-5 sticky transition-colors duration-300 ${isDarkMode ? "bg-gray-500" : "bg-gray-800"} rounded-full z-50 top-0 w-full mt-3 max-w-200 mx-auto mb-3`}
     >
       <div className="nav-flex justify-between">
         {/* Logo */}
