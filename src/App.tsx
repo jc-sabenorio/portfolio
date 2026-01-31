@@ -14,7 +14,7 @@ import useLocalStorage from "@/hooks/useLocalStorage";
 import Navbar from "./components/Navbar/Navbar";
 // import ActionButton from "./components/ActionButton";
 import { gsap } from "gsap";
-import BokehBackgroundDemo from "./components/Background";
+import BokehBackgroundDisplay from "./components/Background";
 
 function App() {
   const [activeSection, setActiveSection] = useState("intro-section");
@@ -53,7 +53,7 @@ function App() {
           <main className="transition-colors duration-300 w-full h-full relative">
             {/* Background layer - z-0 */}
             <div className="fixed inset-0 z-0">
-              <BokehBackgroundDemo />
+              <BokehBackgroundDisplay />
             </div>
 
             {/* Content layer - z-10 */}

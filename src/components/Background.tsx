@@ -39,17 +39,17 @@ const DEFAULT_COLORS = [
 ];
 
 const LIGHT_MODE_COLORS_INDIGO = [
-  "rgba(55, 48, 163, 0.3)", // Indigo-800
-  "rgba(67, 56, 202, 0.25)", // Indigo-700
-  "rgba(49, 46, 129, 0.3)", // Indigo-900
-  "rgba(30, 64, 175, 0.25)", // Blue-800
-  "rgba(71, 85, 105, 0.25)", // Slate-600
+  "rgba(55, 65, 81, 0.3)", // Gray-700
+  "rgba(75, 85, 99, 0.25)", // Gray-600
+  "rgba(31, 41, 55, 0.3)", // Gray-800
+  "rgba(17, 24, 39, 0.25)", // Gray-900
+  "rgba(107, 114, 128, 0.25)", // Gray-500
 ];
 
 export function BokehBackground({
   className,
   children,
-  count = 25,
+  count = 50,
   minSize = 50,
   maxSize = 200,
   speed = 1,
@@ -240,6 +240,6 @@ export function BokehBackground({
   );
 }
 
-export default function BokehBackgroundDemo() {
+export default function BokehBackgroundDisplay() {
   return <BokehBackground />;
 }
