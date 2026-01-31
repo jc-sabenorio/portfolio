@@ -15,7 +15,7 @@ export default function ProjectItem({ projectData }: { projectData: Project }) {
       <PhotoProvider>
         <PhotoView src={projectData.iconLink}>
           <img
-            className="w-80 rounded-md mx-3 mt-0 cursor-pointer hover:scale-110 transition-all"
+            className="w-70 rounded-md mx-3 mt-0 cursor-pointer hover:scale-110 transition-all flex"
             src={projectData.iconLink}
             alt="project-icon"
           />
