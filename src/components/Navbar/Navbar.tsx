@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`p-3 px-5 sticky transition-colors duration-300 ${isDarkMode ? "bg-gray-500" : "bg-gray-800"} rounded-full z-50 top-0 w-full mt-3 max-w-200 mx-auto mb-3`}
+      className={`p-3 px-5 sticky transition-colors duration-300 ${isDarkMode ? "bg-gray-500" : "bg-gray-800"} rounded-3xl z-50 top-0 w-full mt-3 max-w-200 mx-auto mb-3`}
     >
       <div className="nav-flex justify-between">
         {/* Logo */}

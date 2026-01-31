@@ -18,8 +18,8 @@ export default function Navlinks({ handleClick }: { handleClick: () => void }) {
   }, [isAtTop]);
 
   return (
-    <div className="nav-flex gap-0">
-      <div className={`text-white hidden md:flex items-center`}>
+    <div className="nav-flex text-white gap-0">
+      <div className={`hidden md:flex items-center`}>
         <a
           className={`nav-link ${
             activeSection == "intro-section" ? "active" : ""
