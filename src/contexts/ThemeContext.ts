@@ -4,6 +4,6 @@ export const ThemeContext = createContext<{
   isDarkMode: boolean;
   setIsDarkMode: Dispatch<SetStateAction<boolean>>;
 }>({
-  isDarkMode: false,
-  setIsDarkMode: () => {},
+  isDarkMode: true,
+  setIsDarkMode: () => { },
 });

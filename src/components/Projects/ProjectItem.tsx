@@ -8,9 +8,8 @@ export default function ProjectItem({ projectData }: { projectData: Project }) {
   const { isDarkMode } = useContext(ThemeContext);
   return (
     <div
-      className={`flex flex-col md:flex-row items-center gap-3 rounded-md shadow-sm p-3 ${
-        isDarkMode ? "project-dark" : "shadow-black bg-white"
-      }`}
+      className={`flex flex-col md:flex-row items-center gap-3 rounded-md p-3 ${isDarkMode ? "bg-gray-500/50 text-gray-200" : " bg-white"
+        }`}
     >
       <PhotoProvider>
         <PhotoView src={projectData.iconLink}>

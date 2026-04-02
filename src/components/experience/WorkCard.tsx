@@ -9,18 +9,14 @@ export default function WorkCard({ workData }: { workData: WorkExperience }) {
   return (
     <div
       onClick={() => setDisplayContrib((prev) => !prev)}
-      className={`cursor-pointer group rounded-md shadow-sm hover:shadow-md transition-all ${
-        isDarkMode
-          ? "bg-gray-500 text-gray-100 shadow-white"
-          : "shadow-black bg-white"
-      }`}
+      className={`relative cursor-pointer rounded-md shadow-sm transition-all hover:shadow-[0_0_16px_4px_rgba(254,243,199,0.8)] ${isDarkMode ? "bg-gray-500/50 text-gray-200" : "bg-white"}
+  `}
     >
+
       <div className="p-5 rounded-md">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p
-            className={`${
-              isDarkMode ? "text-white" : "text-gray-700"
-            } font-semibold`}
+            className={`text-gray-250`}
           >
             {workData.date}
           </p>
@@ -32,14 +28,13 @@ export default function WorkCard({ workData }: { workData: WorkExperience }) {
         </div>
 
         <div
-          className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
-            displayContrib ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-          }`}
+          className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${displayContrib ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+            }`}
         >
           <div
             className={`overflow-hidden ${workData.contributions.length == 0 && "hidden"}`}
           >
-            <hr className="mt-3 h-0.5" />
+            {/* <hr className="mt-3 h-0.5" /> */}
             <p className="text-xl mt-3 mb-3 font-bold">Contributions</p>
 
             <ul className="list-disc list-inside">

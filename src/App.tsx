@@ -66,7 +66,7 @@ function App() {
               </div>
               <IntroSection />
 
-              <div className="flex flex-col scroll-smooth basis-1/2 p-3 mx-4">
+              <div className="flex flex-col scroll-smooth basis-1/2 p-3 mx-4 ">
                 <RoleSection />
                 <ProjectsSection />
                 <SkillsSection />
