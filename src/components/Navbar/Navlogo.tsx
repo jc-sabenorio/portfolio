@@ -1,5 +1,4 @@
-import { ThemeContext } from "@/contexts/ThemeContext";
-import { useContext } from "react";
+
 export default function Navlogo() {
   // const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
   // function changeTheme() {
